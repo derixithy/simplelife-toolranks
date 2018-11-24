@@ -99,9 +99,6 @@ function toolranks.new_afteruse(itemstack, user, node, digparams)
     wear = digparams.wear / (1 + level / 4)
   end
 
-  --minetest.chat_send_all("wear="..wear.."Original wear: "..digparams.wear.." 1+level/4="..1+level/4)
-  -- Uncomment for testing ^
-
   itemstack:add_wear(wear)
 
   return itemstack
